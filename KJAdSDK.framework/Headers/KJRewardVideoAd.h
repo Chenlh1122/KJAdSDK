@@ -93,6 +93,7 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (nonatomic, copy) NSString *userId;
 
+@property (nonatomic, getter=isAdValid, readonly) BOOL adValid;
 /**
  构造方法
 
