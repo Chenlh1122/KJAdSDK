@@ -94,6 +94,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *userId;
 
 @property (nonatomic, getter=isAdValid, readonly) BOOL adValid;
+
+@property (nonatomic) BOOL videoMuted;
 /**
  构造方法
 
