@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "KJAdSplashDelegate.h"
-NS_ASSUME_NONNULL_BEGIN
 
 @interface KJAdSplash : NSObject
 
@@ -70,5 +69,30 @@ NS_ASSUME_NONNULL_BEGIN
  *关闭广告
  */
 -(void)closeAdView;
+
+
+
+// 下面方法是请求广告跟展示拆分方法。
+/**
+ *  发起拉取广告请求，只拉取不展示
+ *  详解：广告素材及广告图片拉取成功后会回调splashAdDidLoad方法，当拉取失败时会回调kjSplashlFailPresentScreen方法
+ *  @param adSize 展示开屏广告容器宽高
+ */
+-(void)loadAdWithAdSize:(CGSize)adSize;
+
+/**
+ * 返回广告是否可展示
+ * @return 当广告已经加载完成且未曝光时，为YES，否则为NO
+ */
+-(BOOL)isAdValid;
+
+/**
+ *  展示广告，调用此方法前需调用isAdValid方法判断广告素材是否有效
+ *  详解：广告展示成功时会回调kjSplashSuccessPresentScreen方法，展示失败时会回调kjSplashlFailPresentScreen方法
+ *  @param window 展示开屏的容器
+ *  bottomView 自定义底部View  全屏广告 则设置nil
+ */
+-(void)showAdInWindow:(UIWindow *)window withBottomView:(UIView *)bottomView;
+
+
 @end
-NS_ASSUME_NONNULL_END

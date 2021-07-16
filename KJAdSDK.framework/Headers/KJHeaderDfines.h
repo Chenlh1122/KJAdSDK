@@ -16,6 +16,12 @@
  */
 #define kWeakSelfKJ(type)  __weak typeof(type) weak##type = type;
 
+// 屏幕高度
+#define KJ_kScreenHeight [[UIScreen mainScreen] bounds].size.height
+// 屏幕宽度
+#define KJ_kScreenWidth [[UIScreen mainScreen] bounds].size.width
+
+
 /*************************************日志输出 *******************************************/
 #define KJLogFun    fprintf(stderr,"[KJADSDKLog] %s\n",__func__);
 
@@ -44,20 +50,6 @@ fprintf(stderr,"[KJADSDKLog] %s (%s:%d)%s\t%s\n\n",[str UTF8String],[[[NSString 
 #define KJ_DEPRECATED_ATTRIBUTE
 #endif
 
-// 屏幕高度
-#define KJ_kScreenHeight [[UIScreen mainScreen] bounds].size.height
-// 屏幕宽度
-#define KJ_kScreenWidth [[UIScreen mainScreen] bounds].size.width
-
-#define KJ_isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-// 判断iPhoneX
-#define KJ_IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !KJ_isPad : NO)
-// 判断iPHoneXr
-#define KJ_IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !KJ_isPad : NO)
-// 判断iPhoneXs
-#define KJ_IS_IPHONE_Xs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !KJ_isPad : NO)
-// 判断iPhoneXs Max
-#define KJ_IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !KJ_isPad : NO)
 
 UIKIT_EXTERN NSString *const KJHostAPI;
 UIKIT_EXTERN NSString *const KJAdVersion;

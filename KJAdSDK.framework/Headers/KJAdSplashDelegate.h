@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 启动位置信息
 -(BOOL) kjEnableLocation KJ_DEPRECATED_MSG_ATTRIBUTE("该协议废弃");
 
+// 成功加载splash广告材料时调用
+-(void)kjSplashAdDidLoad:(KJAdSplash *)splash;
+
 // 广告展示成功
 - (void)kjSplashSuccessPresentScreen:(KJAdSplash *)splash;
 
@@ -34,7 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 广告详情页消失(部分广告来源不会有回调)
 - (void)kjSplashDidDismissLp:(KJAdSplash *)splash;
-
 
 @end
 
