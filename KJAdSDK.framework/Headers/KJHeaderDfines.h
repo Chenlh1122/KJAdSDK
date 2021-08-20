@@ -11,7 +11,7 @@
 #import "KJCustomLog.h"
 #import <UIKit/UIKit.h>
 
-/**
+/** 
  弱引用
  */
 #define kWeakSelfKJ(type)  __weak typeof(type) weak##type = type;
