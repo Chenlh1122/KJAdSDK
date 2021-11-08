@@ -50,9 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)kj_interstitialClicked:(KJExpressInterstitialAd *)interstitial;
 
-
-
 @end
+
 @interface KJExpressInterstitialAd : NSObject
 
 /**
