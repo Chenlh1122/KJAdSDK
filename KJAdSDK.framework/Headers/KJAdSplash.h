@@ -1,9 +1,9 @@
 //
-//  KJAdSplash.h
+//  KJAdNewSplash.h
 //  KJAdSDK
-//  开屏
-//  Created by kj on 2018/12/7.
-//  Copyright © 2018年 ArmorNetwork. All rights reserved.
+//
+//  Created by kj on 2021/11/12.
+//  Copyright © 2021 ArmorNetwork. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,7 +16,7 @@
  required(必须).
 
  */
-@property (nonatomic, weak) UIViewController *rootViewController;
+@property (nonatomic, weak, readonly) UIViewController *rootViewController;
 
 /**
  *  委托对象
@@ -27,7 +27,7 @@
  * 获取mssp代码位id
  * 可以不用设置该方法，直接使用 initWithAppId: placementId: 构造方法设置
  */
-@property (nonatomic,copy) NSString* AdUnitTag ;
+@property (nonatomic,copy, readonly) NSString* AdUnitTag;
 
 /**
  *  开屏广告的背景图片
@@ -39,7 +39,6 @@
  *  SDK版本
  */
 @property (nonatomic, readonly) NSString* Version;
-
 
 /**
 *  构造方法
@@ -63,13 +62,12 @@
  *  @param window 展示开屏的容器
  *  bottomView 自定义底部View，可以在此View中设置应用Logo
  */
-- (void)loadAndShowInWindow:(UIWindow *)window withBottomView:(UIView *)bottomView; 
+- (void)loadAndShowInWindow:(UIWindow *)window withBottomView:(UIView *)bottomView;
 
 /**
  *关闭广告
  */
 -(void)closeAdView;
-
 
 
 // 下面方法是请求广告跟展示拆分方法。
@@ -94,5 +92,5 @@
  */
 -(void)showAdInWindow:(UIWindow *)window withBottomView:(UIView *)bottomView;
 
-
 @end
+
