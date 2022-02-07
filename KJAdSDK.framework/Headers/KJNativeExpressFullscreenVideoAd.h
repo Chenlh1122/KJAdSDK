@@ -79,7 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param appId 媒体ID
  @param adUnitTag 广告位ID
  @param adsize 期望尺寸
- @return KJExpressInterstitialAd 实例
+ @return KJNativeExpressFullscreenVideoAd 实例
  */
 - (instancetype)initWithAppId:(NSString *)appId adUnitTag:(NSString *)adUnitTag adSize:(CGSize)adsize;
 

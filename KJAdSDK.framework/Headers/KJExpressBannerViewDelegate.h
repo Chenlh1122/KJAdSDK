@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
-//请求广告条数据成功后调用
+//请求Banner成功后调用
 - (void)kj_expressBannerAdViewDidLoad:(KJExpressBannerView *)bannerAdView;
 
-// 请求广告条数据失败后调用
+// 请求Banner失败后回调
 - (void)kj_expressBannerAdView:(KJExpressBannerView *)bannerAdView didLoadFailWithError:(NSError *)error;
 
 // banner 曝光回调
