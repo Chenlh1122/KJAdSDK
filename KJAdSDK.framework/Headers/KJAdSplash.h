@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "KJAdSplashDelegate.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface KJAdSplash : NSObject
 
 /*
@@ -34,6 +36,12 @@
  *  可以设置背景图片作为开屏加载时的默认背景
  */
 @property (nonatomic, strong) UIImage *backgroundImage;
+
+/**
+ * 如果要使用GroMore 且需要设置自定义底部视图 需要在 loadAdWithAdSize: 方法调用前进行设置设置
+ * 自定义底部视图，可以设置一些自定义元素，例如LOGO。如果不设置，广告将按照全屏展示。底部视图最大高度不能超过屏幕高度的25%，否则将按照约定最大高度适配
+ */
+@property (nonatomic, strong, nullable) UIView *customBottomView;
 
 /**
  *  SDK版本
@@ -90,7 +98,7 @@
  *  @param window 展示开屏的容器
  *  bottomView 自定义底部View  全屏广告 则设置nil
  */
--(void)showAdInWindow:(UIWindow *)window withBottomView:(UIView *)bottomView;
-
+-(void)showAdInWindow:(UIWindow *)window withBottomView:(nullable UIView  *)bottomView;
+NS_ASSUME_NONNULL_END
 @end
 
