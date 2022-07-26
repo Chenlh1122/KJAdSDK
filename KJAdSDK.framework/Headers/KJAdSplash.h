@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIImage *backgroundImage;
 
 /**
- * 如果要使用GroMore 且需要设置自定义底部视图 需要在 loadAdWithAdSize: 方法调用前进行设置设置
+ * 如果要使用GroMore 且需要设置自定义底部视图 需要在 loadAdWithAdSize: 方法调用前进行设置
  * 自定义底部视图，可以设置一些自定义元素，例如LOGO。如果不设置，广告将按照全屏展示。底部视图最大高度不能超过屏幕高度的25%，否则将按照约定最大高度适配
  */
 @property (nonatomic, strong, nullable) UIView *customBottomView;
