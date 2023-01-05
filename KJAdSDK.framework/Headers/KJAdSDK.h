@@ -22,10 +22,16 @@ FOUNDATION_EXPORT const unsigned char KJAdSDKVersionString[];
 #import "KJNativeExpressAd.h"
 #import "KJExpressBannerView.h"
 #import "KJExpressBannerViewDelegate.h"
-#import "KJVideoConfig.h"
-#import "KJExpressInterstitialAd.h"
 #import "KJRewardVideoAd.h"
 #import "KJNativeExpressFullscreenVideoAd.h"
+
+#import "KJVideoConfig.h"
+#import "KJUnifiedNativeAdDataObject.h"
+#import "KJUnifiedNativeAdView.h"
+#import "KJMediaView.h"
+#import "KJLogoView.h"
+#import "KJUnifiedNativeAd.h"
+#import "KJUnifiedNativeAdDelegate.h"
 
 //#import "KJUnifiedNativeAd.h"
 //#import "KJUnifiedNativeAdDataObject.h"

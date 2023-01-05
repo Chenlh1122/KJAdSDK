@@ -2,8 +2,8 @@
 //  KJNativeExpressAd.h
 //  KJAdSDK
 //
-//  Created by kj on 2019/2/14.
-//  Copyright © 2019年 ArmorNetwork. All rights reserved.
+//  Created by 陈林辉 on 2022/10/12.
+//  Copyright © 2022 ArmorNetwork. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,7 +12,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KJNativeExpressAd : NSObject
-
 // 委托对象
 @property (nonatomic, weak) id<KJNativeExpressAdDelegate> delegate;
 

@@ -2,8 +2,8 @@
 //  KJRewardVideoAd.h
 //  KJAdSDK
 //
-//  Created by kj on 2020/3/16.
-//  Copyright © 2020 ArmorNetwork. All rights reserved.
+//  Created by 陈林辉 on 2022/10/11.
+//  Copyright © 2022 ArmorNetwork. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,73 +16,52 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  广告数据加载成功回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdDidLoad:(KJRewardVideoAd *)rewardedVideoAd;
 
 /**
  视频数据下载成功回调，已经下载过的视频会直接回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdVideoDidLoad:(KJRewardVideoAd *)rewardedVideoAd;
 
 /**
  视频播放页即将展示回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdWillVisible:(KJRewardVideoAd *)rewardedVideoAd;
 
 /**
  视频广告曝光回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdDidExposed:(KJRewardVideoAd *)rewardedVideoAd;
 
 /**
  视频播放页关闭回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdDidClose:(KJRewardVideoAd *)rewardedVideoAd;
 
 /**
  视频广告信息点击回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdDidClicked:(KJRewardVideoAd *)rewardedVideoAd;
 
 /**
  视频广告各种错误信息回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
- @param error 具体错误信息
  */
 - (void)kj_rewardVideoAd:(KJRewardVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error;
 
 /**
  视频广告播放达到激励条件回调
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdDidRewardEffective:(KJRewardVideoAd *)rewardedVideoAd;
 
 /**
  视频广告视频播放完成
-
- @param rewardedVideoAd KJRewardVideoAd 实例
  */
 - (void)kj_rewardVideoAdDidPlayFinish:(KJRewardVideoAd *)rewardedVideoAd;
 
 @end
 
-
 @interface KJRewardVideoAd : NSObject
-
 @property (nonatomic, weak) id <KJRewardedVideoAdDelegate> delegate;
 /**
   必需的。
@@ -116,7 +95,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return 是否展示成功
  */
 - (BOOL)kj_showAdFromRootViewController:(UIViewController *)rootViewController;
-
 @end
 
 NS_ASSUME_NONNULL_END

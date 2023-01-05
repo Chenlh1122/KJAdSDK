@@ -2,8 +2,8 @@
 //  KJNativeExpressFullscreenVideoAd.h
 //  KJAdSDK
 //
-//  Created by kj on 2021/11/5.
-//  Copyright © 2021 ArmorNetwork. All rights reserved.
+//  Created by 陈林辉 on 2022/10/11.
+//  Copyright © 2022 ArmorNetwork. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -61,9 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-
 @interface KJNativeExpressFullscreenVideoAd : NSObject
-
 /**
  *  委托对象
  */
@@ -78,10 +76,10 @@ NS_ASSUME_NONNULL_BEGIN
  构造方法
  @param appId 媒体ID
  @param adUnitTag 广告位ID
- @param adsize 期望尺寸
+ @param adSize 期望尺寸
  @return KJNativeExpressFullscreenVideoAd 实例
  */
-- (instancetype)initWithAppId:(NSString *)appId adUnitTag:(NSString *)adUnitTag adSize:(CGSize)adsize;
+- (instancetype)initWithAppId:(NSString *)appId adUnitTag:(NSString *)adUnitTag adSize:(CGSize)adSize;
 
 /**
  *  广告发起请求方法

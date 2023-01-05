@@ -2,8 +2,8 @@
 //  KJNativeExpressAdView.h
 //  KJAdSDK
 //
-//  Created by kj on 2019/2/14.
-//  Copyright © 2019年 ArmorNetwork. All rights reserved.
+//  Created by 陈林辉 on 2022/10/12.
+//  Copyright © 2022 ArmorNetwork. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KJNativeExpressAdView : UIView
-
 // 是否渲染完毕
 @property (nonatomic, assign, readonly) BOOL isReady;
 
@@ -24,14 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 //原生模板广告渲染
 - (void)render;
 
-/**
- * 发送点击（新版修改可以不发送）
- */
-//-(void)handleClick;
-
 // 发送展现 (新版不用实现)
 - (void)trackImpression;
-
 @end
 
 NS_ASSUME_NONNULL_END

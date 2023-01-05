@@ -2,19 +2,16 @@
 //  KJExpressBannerView.h
 //  KJAdSDK
 //
-//  Created by kj on 2020/3/4.
-//  Copyright © 2020 ArmorNetwork. All rights reserved.
+//  Created by 陈林辉 on 2022/10/11.
+//  Copyright © 2022 ArmorNetwork. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "KJExpressBannerViewDelegate.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
-
-
 @interface KJExpressBannerView : UIView
-
 // 委托对象
 @property (nonatomic, weak) id<KJExpressBannerViewDelegate> delegate;
 
