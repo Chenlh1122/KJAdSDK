@@ -2,7 +2,7 @@
 //  KJLogoView.h
 //  KJAdSDK
 //
-//  Created by kj on 2020/12/3.
+//  Created by clh on 2020/12/3.
 //  Copyright © 2020 ArmorNetwork. All rights reserved.
 //
 

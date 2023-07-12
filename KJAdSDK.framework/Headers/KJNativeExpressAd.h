@@ -2,7 +2,7 @@
 //  KJNativeExpressAd.h
 //  KJAdSDK
 //
-//  Created by 陈林辉 on 2022/10/12.
+//  Created by clh on 2022/10/12.
 //  Copyright © 2022 ArmorNetwork. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  KJNativeExpressAdDelegate.h
 //  KJAdSDK
 //
-//  Created by kj on 2019/2/14.
+//  Created by clh on 2019/2/14.
 //  Copyright © 2019年 ArmorNetwork. All rights reserved.
 //
 

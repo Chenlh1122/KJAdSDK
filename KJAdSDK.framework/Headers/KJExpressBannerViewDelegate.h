@@ -2,7 +2,7 @@
 //  KJExpressBannerViewDelegate.h
 //  KJAdSDK
 //
-//  Created by kj on 2020/3/4.
+//  Created by clh on 2020/3/4.
 //  Copyright © 2020 ArmorNetwork. All rights reserved.
 //
 

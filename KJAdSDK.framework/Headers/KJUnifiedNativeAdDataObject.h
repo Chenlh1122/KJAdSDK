@@ -82,7 +82,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)trackImpression:(UIView *)view;
 
-
+/**
+ *  广告是否有效
+ */
+@property (nonatomic, readonly) BOOL isAdValid;
 @end
 
 NS_ASSUME_NONNULL_END

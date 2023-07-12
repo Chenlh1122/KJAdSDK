@@ -2,7 +2,7 @@
 //  KJAdSplashDelegate.h
 //  KJAdSDK
 //
-//  Created by kj on 2018/12/7.
+//  Created by clh on 2018/12/7.
 //  Copyright © 2018年 ArmorNetwork. All rights reserved.
 //
 
@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 广告展示成功
 - (void)kjSplashSuccessPresentScreen:(KJAdSplash *)splash;
+
+// 广告曝光成功
+- (void)kjSplashAdExposured:(KJAdSplash *)splash;
 
 // 广告展示失败
 - (void)kjSplashlFailPresentScreen:(KJAdSplash *)splash withError:(NSError *) error;
