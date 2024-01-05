@@ -1,6 +1,6 @@
 framework module KJAdSDK {
   umbrella header "KJAdSDK.h"
-
   export *
+
   module * { export * }
 }
